@@ -1,0 +1,6 @@
+id,X_requirement_text,y_label
+1,"The system shall allow users to create a new account",FR
+2,"The application shall generate monthly financial reports",FR
+3,"The software shall respond to user requests within 2 seconds",NFR
+4,"The system shall encrypt stored customer information",NFR
+5,"The application shall send email notifications after registration",FR
