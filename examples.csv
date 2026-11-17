@@ -1,0 +1,6 @@
+X,y
+The system shall allow users to create a new account.,FR
+The application shall generate monthly financial reports.,FR
+The software shall respond to user requests within 2 seconds.,NFR
+The system shall encrypt stored customer information.,NFR
+The application shall send email notifications.,FR
