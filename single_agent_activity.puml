@@ -1,0 +1,21 @@
+@startuml
+title End-to-End Single AI Agent: X to y
+skinparam shadowing false
+start
+:Receive natural-language requirement X;
+partition "Single AI Requirements Classification Agent" {
+  :Data understanding / text preprocessing;
+  :TF-IDF feature extraction;
+  :Trained SVM or Random Forest inference;
+  :Predicted class FR or NFR;
+  if (LLM explanation configured?) then (yes)
+    :Reasoning - request grounded explanation;
+  else (no)
+    :Skip generative explanation;
+  endif
+  :Output generation;
+}
+:Return y = FR/NFR
+and optional explanation;
+stop
+@enduml

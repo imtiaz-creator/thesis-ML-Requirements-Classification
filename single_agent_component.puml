@@ -1,0 +1,27 @@
+@startuml
+title Single AI Agent - Conceptual Components
+skinparam componentStyle rectangle
+left to right direction
+actor "Requirements Analyst" as Analyst
+rectangle "Single AI Requirements Classification Agent" {
+  [Input & Data Understanding] as Input
+  [Preprocessing] as Prep
+  [Fitted TF-IDF] as TF
+  [Trained SVM / Random Forest] as ML
+  [Output Formatter] as Output
+  [GAI Explanation Adapter
+(optional, proposed)] as GAI
+  Input --> Prep
+  Prep --> TF
+  TF --> ML
+  ML --> Output : FR or NFR
+  ML --> GAI : predicted class
+  GAI --> Output : advisory explanation
+}
+cloud "External LLM
+(if configured)" as LLM
+Analyst --> Input : X
+GAI --> LLM : X + prediction
+LLM --> GAI : explanation
+Output --> Analyst : y + optional explanation
+@enduml
