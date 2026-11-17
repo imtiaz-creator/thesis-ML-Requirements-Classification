@@ -1,8 +1,7 @@
-# Dataset examples (X, y)
+# Prompt Library — Single AI Requirements Classification Agent
 
-Each row contains a natural-language requirement (`X`) and its known classification label (`y`).
+- [`agent_architecture.md`](agent_architecture.md): input X, end-to-end stages, output y; implementation versus conceptual GAI extension.
+- [`zero_shot.md`](zero_shot.md): one new observation X with **no** examples.
+- [`few_shot.md`](few_shot.md): **the same X**, preceded by known X/y pairs from `../data/examples.csv`.
 
-- `FR` — Functional Requirement: a function or service the system must provide.
-- `NFR` — Non-Functional Requirement: a system quality or constraint (for example, performance or security).
-
-These five pairs were shared as previous lab examples in the conversation. Confirm text and labels against your original `data/examples.csv` before submitting. This file is for demonstrating prompts; five examples are **not sufficient for a valid performance study**.
+The goal is to compare **prompt strategies**, not to claim measured performance. For an actual comparison, run both prompts on the same model and record the outputs; evaluate against independently checked ground truth.
