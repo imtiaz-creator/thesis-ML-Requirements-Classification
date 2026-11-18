@@ -9,3 +9,10 @@ This folder intentionally does not include a fabricated trained classifier or fa
 5. Optionally call a configured LLM for a brief *advisory* explanation, ensuring the LLM does not silently change y.
 
 The `.md` prompts in `/prompts/` can be run in an LLM interface without requiring these artifacts. That is a **prompting demonstration**, not the original model's inference.
+## Lab 1.5 — End-to-End AI Demonstration
+
+The Google Colab notebook demonstrates the
+AI Requirements Classification Agent using
+the Gemini API.
+
+[View Lab 1.5 Google Colab Notebook](notebooks/Lab_1_5_Gemini_AI_Agent.ipynb)
